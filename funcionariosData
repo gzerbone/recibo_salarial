@@ -1,0 +1,16 @@
+use recibo_salarial;
+insert into funcionarios( matricula, tel_funcionario, nome_funcionario, cargo, data_admissao)
+values(1, 88221003, 'gabriela', 'CEO', '2002-02-02');
+insert into funcionarios( matricula, tel_funcionario, nome_funcionario, cargo, data_admissao)
+values(2, 999999, 'higrind', 'faxineira', '2002-12-09');
+insert into funcionarios( matricula, tel_funcionario, nome_funcionario, cargo, data_admissao)
+values(3, 32567, 'gonzaga', 'pet', '2002-02-02');
+insert into funcionarios( matricula, tel_funcionario, nome_funcionario, cargo, data_admissao)
+values(4, 3242423, 'taylor swift', 'cantora', '1989-12-09');
+SELECT * from funcionarios;
+
+UPDATE funcionarios SET cargo="gostosa" WHERE matricula=2;
+
+SELECT * from funcionarios WHERE matricula=2;
+
+DESCRIBE recibo_funcionario;
